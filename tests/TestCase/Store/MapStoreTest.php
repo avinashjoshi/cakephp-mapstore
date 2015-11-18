@@ -31,8 +31,8 @@ class MapStoreTest extends TestCase
     {
         parent::setUp();
         
-        Configure::write('App.Security.key', '2an`(oxsc7uVkfSZ}@xdf4ti;/F79`4=>2;d>A5OhRDCeo1_n0vc[nmf+&3RMy2');
-        Configure::write('App.Security.salt', 'iU7s9~DQo1F4_u8Vr8VU3<H7#3H3"k5svJ0haqUC`HX16Gr#K2RO7yNj49F?=ve');
+        Configure::write('Security.key', '2an`(oxsc7uVkfSZ}@xdf4ti;/F79`4=>2;d>A5OhRDCeo1_n0vc[nmf+&3RMy2');
+        Configure::write('Security.salt', 'iU7s9~DQo1F4_u8Vr8VU3<H7#3H3"k5svJ0haqUC`HX16Gr#K2RO7yNj49F?=ve');
 
         $this->Store = MapStore::load('1');
         $this->Model = TableRegistry::get('MapStore.MapStores');
@@ -75,7 +75,7 @@ class MapStoreTest extends TestCase
 
         $entity = $this->Model->get(['2', 'access_token']);
         $dbValue = stream_get_contents($entity->value);
-        $dbValueDecrypted = Security::decrypt($dbValue, Configure::read('App.Security.key'), Configure::read('App.Security.salt'));
+        $dbValueDecrypted = Security::decrypt($dbValue, Configure::read('Security.key'), Configure::read('Security.salt'));
 
         $this->assertNotEquals($value, $dbValue);
         $this->assertEquals($value, $dbValueDecrypted);

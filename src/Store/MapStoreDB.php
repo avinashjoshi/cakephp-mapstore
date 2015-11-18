@@ -52,11 +52,11 @@ class MapStoreDB
 
         if ($this->options['encrypt']) {
             if (!$this->options['salt']) {
-                $this->options['salt'] = Configure::read('App.Security.salt');
+                $this->options['salt'] = Configure::read('Security.salt');
             }
 
             if (!$this->options['key']) {
-                $this->options['key'] = Configure::read('App.Security.key');
+                $this->options['key'] = Configure::read('Security.key');
             }
         }
     }
@@ -122,6 +122,24 @@ class MapStoreDB
         }
 
         return $success;
+    }
+
+    /**
+     * Replace a key in the database
+     *
+     * DEPRECATION WARNING! This method will be removed from the public API
+     * in the next major point release
+     *
+     * @deprecated deprecated since version 1.8
+     *
+     * @param string $key  the key
+     * @param mixed  $value the value to store
+     *
+     * @return boolean successful replace
+     */
+    public function replace($key, $value)
+    {
+        return $this->set($key, $value);
     }
 
     /**

@@ -27,7 +27,7 @@ class MapStore
      * @param string $storeId the store name / id
      * @param string $options an array of options
      *
-     * @return \MapStore\MapStoreDB class
+     * @return \MapStore\Store\MapStoreDB class
      */
     public static function load($storeId, array $options = [])
     {
