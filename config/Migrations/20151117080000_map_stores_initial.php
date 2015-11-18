@@ -33,10 +33,10 @@ class MapStoresInitial extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('map_stores', ['id' => false, 'primary_key' => ['store_id', 'key']]);
+        $table = $this->table('map_stores', ['id' => false, 'primary_key' => ['store_id', 'keyname']]);
         $table
             ->addColumn('store_id', 'string')
-            ->addColumn('key', 'string')
+            ->addColumn('keyname', 'string')
             ->addColumn('value', 'blob')
             ->create();
     }

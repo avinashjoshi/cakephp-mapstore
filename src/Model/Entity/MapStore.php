@@ -30,7 +30,7 @@ class MapStore extends Entity
      */
     protected $_accessible = [
         'store_id' => true,
-        'key' => true,
+        'keyname' => true,
         'value' => true
     ];
 }

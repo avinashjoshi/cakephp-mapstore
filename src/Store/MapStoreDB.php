@@ -73,7 +73,7 @@ class MapStoreDB
         $value = false;
         $conditions = [
             'store_id' => $this->store_id,
-            'key' => $key
+            'keyname' => $key
         ];
         
         $store = $this->model
@@ -114,7 +114,7 @@ class MapStoreDB
         }
 
         $entity->set('store_id', $this->store_id);
-        $entity->set('key', $key);
+        $entity->set('keyname', $key);
         $entity->set('value', $value);
 
         if ($this->model->save($entity)) {

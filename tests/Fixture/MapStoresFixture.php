@@ -32,14 +32,14 @@ class MapStoresFixture extends TestFixture
         'store_id' => [
             'type' => 'string'
         ],
-        'key' => [
+        'keyname' => [
             'type' => 'string'
         ],
         'value' => [
             'type' => 'binary'
         ],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['store_id', 'key'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['store_id', 'keyname'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -55,7 +55,7 @@ class MapStoresFixture extends TestFixture
     public $records = [
         [
             'store_id' => '1',
-            'key' => 'access_token',
+            'keyname' => 'access_token',
             'value' => '123456'
         ],
     ];
