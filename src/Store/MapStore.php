@@ -33,5 +33,4 @@ class MapStore
     {
         return new MapStoreDB($storeId, $options);
     }
-
 }

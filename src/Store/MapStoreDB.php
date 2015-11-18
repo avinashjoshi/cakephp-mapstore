@@ -127,15 +127,10 @@ class MapStoreDB
     /**
      * Replace a key in the database
      *
-     * DEPRECATION WARNING! This method will be removed from the public API
-     * in the next major point release
-     *
-     * @deprecated deprecated since version 1.8
-     *
      * @param string $key  the key
      * @param mixed  $value the value to store
      *
-     * @return boolean successful replace
+     * @return bool successful replace
      */
     public function replace($key, $value)
     {

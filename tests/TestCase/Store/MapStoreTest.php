@@ -14,10 +14,10 @@
 namespace MapStore\Test\TestCase\Store;
 
 use Cake\Core\Configure;
-use Cake\Utility\Security;
 use Cake\Core\Exception\Exception;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
+use Cake\Utility\Security;
 use MapStore\Store\MapStore;
 
 class MapStoreTest extends TestCase
@@ -116,5 +116,4 @@ class MapStoreTest extends TestCase
 
         $this->assertEquals('5555', $store1->get('access_token'));
     }
-
 }

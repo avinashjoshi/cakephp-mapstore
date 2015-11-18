@@ -1,6 +1,8 @@
 # MapStore
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+[![Build Status](https://travis-ci.org/avinashjoshi/cakephp-mapstore.svg?branch=master)](https://travis-ci.org/avinashjoshi/cakephp-mapstore)
+[![Coverage Status](https://coveralls.io/repos/avinashjoshi/cakephp-mapstore/badge.svg?branch=master&service=github)](https://coveralls.io/github/avinashjoshi/cakephp-mapstore?branch=master)
 
 MapStore is a key-value store plugin for [CakePHP](http://cakephp.org) framework.
 
