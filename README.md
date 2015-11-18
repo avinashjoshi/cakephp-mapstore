@@ -9,7 +9,7 @@ MapStore is a key-value store plugin for [CakePHP](http://cakephp.org) framework
 The easiest & recommended way to install MapStore is via [composer](http://getcomposer.org). Run the following command:
 
 ```
-composer require avinashjoshi/cake-key-value-store
+composer require avinashjoshi/cakephp-mapstore
 ```
 
 After that you should load the plugin in your app editing `config/bootstrap.php`:
@@ -65,7 +65,7 @@ $store_2 = MapStore::load('store_2', ['encrypt' => false]);
 ```
 
 ## Support
-Feel free to open an [issue](https://github.com/avinashjoshi/cake-key-value-store) if you need help or have ideas to improve this plugin.
+Feel free to open an [issue](https://github.com/avinashjoshi/cakephp-mapstore) if you need help or have ideas to improve this plugin.
 
 ## Contributing
 Contributions and Pull Requests are always more than welcome!

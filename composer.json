@@ -1,7 +1,7 @@
 {
-    "name": "avinashjoshi/cake-key-value-store",
+    "name": "avinashjoshi/cakephp-mapstore",
     "description": "MapStore - A Key Value store for CakePHP",
-    "homepage": "https://github.com/avinashjoshi/cake-key-value-store",
+    "homepage": "https://github.com/avinashjoshi/cakephp-mapstore",
     "type": "cakephp-plugin",
     "license": "MIT",
     "authors": [

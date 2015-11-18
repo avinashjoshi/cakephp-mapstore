@@ -7,7 +7,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright (c) Avinash Joshi
- * @link          http://github.com/avinashjoshi/cake-key-value-store
+ * @link          http://github.com/avinashjoshi/cakephp-mapstore
  * @since         1.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
