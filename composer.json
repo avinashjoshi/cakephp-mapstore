@@ -1,0 +1,34 @@
+{
+    "name": "avinashjoshi/cake-key-value-store",
+    "description": "MapStore - A Key Value store for CakePHP",
+    "homepage": "https://github.com/avinashjoshi/cake-key-value-store",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Avinash Joshi",
+            "email": "a10i@icloud.com",
+            "homepage": "http://a10i.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "cakephp/cakephp-codesniffer": "2.*",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MapStore\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MapStore\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
