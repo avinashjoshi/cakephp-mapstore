@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/avinashjoshi/cakephp-mapstore.svg?branch=master)](https://travis-ci.org/avinashjoshi/cakephp-mapstore)
 [![Coverage Status](https://coveralls.io/repos/avinashjoshi/cakephp-mapstore/badge.svg?branch=master&service=github)](https://coveralls.io/github/avinashjoshi/cakephp-mapstore?branch=master)
 
-MapStore is a key-value store plugin for [CakePHP](http://cakephp.org) framework.
+MapStore is a key-value store plugin for [CakePHP](http://cakephp.org) framework. It is inspired by other key-value store projects.
 
 ## Installation
 
